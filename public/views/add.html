@@ -1,0 +1,12 @@
+<!-- public/views/add.html -->
+<div class="jumbotron text-centre">
+    <form method="post" ng-submit="send_data()">
+        <input type="text" name="firstname" placeholder="First Name" ng-model="form_data.first_name">
+        <input type="text" name="lastname" placeholder="Last Name" ng-model="form_data.last_name">
+        <input type="number" name="mobile" placeholder="Mobile Number" ng-model="form_data.mobile">
+        <br><br>
+        <div class="btnalnctr">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
