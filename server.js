@@ -34,6 +34,6 @@ require('./backendapp/routes')(expobj); // configure our routes
 expobj.listen(port);
 // shoutout to the user
 console.log('\nNode Server has been Started');
-console.log('\nTo check it open any web browser and type "localhost:"+port+" and see the magic');
+console.log('\nTo check it open any web browser and type "localhost:'+port+'" and see the magic');
 // expose app
 exports = module.exports = expobj;
