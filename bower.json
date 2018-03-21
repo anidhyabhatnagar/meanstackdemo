@@ -1,0 +1,28 @@
+{
+  "name": "meanlearning",
+  "description": "This project is for Learning MEAN Stack",
+  "main": "server.js",
+  "authors": [
+    "Anidhya Bhatnagar"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mean"
+  ],
+  "homepage": "https://github.com/anidhyabhatnagar/meanstackdemo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^5.0.8",
+    "animate.css": "^3.5.2",
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9"
+  }
+}

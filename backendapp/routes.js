@@ -25,6 +25,6 @@ var About = require('./models/about');
         // frontend routes ===============================================
         // route to handle all angular requests
         expobj.get('*', function(req,res){
-            res.sendfile('./public/index.html'); // load or public/index.html file
+            res.sendFile('./public/index.html'); // load or public/index.html file
         });
     };
