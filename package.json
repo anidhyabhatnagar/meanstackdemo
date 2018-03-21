@@ -1,0 +1,34 @@
+{
+  "name": "meanlearning",
+  "version": "1.0.0",
+  "description": "This project is for Learning MEAN Stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anidhyabhatnagar/meanlearning.git"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "Anidhya Bhatnagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anidhyabhatnagar/meanlearning/issues"
+  },
+  "homepage": "https://github.com/anidhyabhatnagar/meanlearning#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.11",
+    "popper.js": "^1.14.1"
+  }
+}
