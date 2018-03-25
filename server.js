@@ -5,7 +5,28 @@ var express = require('express');
 var expobj = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-//var mongoose = require('mongoose');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/meanstackdemo');
+// on connection
+mongoose.connection.on('connected', function(){
+    console.log('Connected to MongoDB Database: meanstackdemo @ 27017');
+});
+
+mongoose.connection.on('err', function(err){
+    if(err) {
+        console.log('Error in Database Connection: ' + err);
+    }
+});
+
+mongoose.connection.on('disconnected', function(){
+    console.log('Disconnected from Database');
+});
+
+process.on('SIGINT', function() {
+    console.log("Disconnected from Database through App Termination");
+    process.exit(0);
+});
 
 // configuration ===================================================
 // backend configuration files
@@ -26,7 +47,7 @@ expobj.use(bodyParser.urlencoded({extended: true}));
 expobj.use(express.static(__dirname + '/public'));
 
 // routes ==========================================================
-//gitvdfdf
+// gitvdfdf
 require('./backendapp/routes')(expobj); // configure our routes
 
 // start app ========================================================

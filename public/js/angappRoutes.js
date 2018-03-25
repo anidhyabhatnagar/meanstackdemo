@@ -17,6 +17,12 @@ angular.module('angappRoutes',[]).config(['$routeProvider', '$locationProvider',
         .when('/contact', {
             templateUrl: 'views/contact.html',
             controller: 'ContactController'
+        })
+    
+        // Contact Us Page
+        .when('/add', {
+            templateUrl: 'views/add.html',
+            controller: 'AddController'
         });
     $locationProvider.html5Mode(true);
 }]);
